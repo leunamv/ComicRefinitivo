@@ -1,0 +1,44 @@
+
+   <ion-header>
+    <ion-toolbar>
+      <ion-title><h1>COMICS DEL MUNDO Y SU AUTOR</h1></ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-list  >
+      <ion-item  class="uno-background-color"  *ngFor="let comic of Comics">
+        <!-- ADAPTADO DEL CODIGO DE TIBURCIO BICICLETAS -->
+
+        <ion-card>
+          <ion-avatar>
+            <img
+              *ngIf="comic.filename"
+              src="http://localhost:8080/images/{{comic.filename}}"
+              alt="image"/>
+          
+          </ion-avatar>
+        </ion-card>
+          <ion-card-header>
+            
+            <ion-card-title>Comic: {{comic.comic}} <br>Autor:{{comic.autor}}</ion-card-title>            
+         
+         </ion-card-header>
+          
+          <!-- <ion-button horizontal = "end" clear [routerLink]="['update.page/', comic.id]"> -->
+            <ion-button horizontal = "end" clear (click)="updateComic(comic.id)">
+            <ion-icon name="create" style="zoom:1.5"></ion-icon>
+          </ion-button>
+          <ion-button horizontal = "end" clear (click)="removeComic(comic.id)">
+            <ion-icon name="trash" style="zoom:1.5"></ion-icon>
+          </ion-button>
+        
+        <!-- </div> -->
+      </ion-item>
+      
+    </ion-list>
+  
+  </ion-content>
+

@@ -1,0 +1,67 @@
+div {
+    background-color: rgb(59, 119, 178);
+}
+h1{
+
+    color:crimson;
+}
+ion-content::content{
+    background-color: rgb(59, 119, 178);
+}
+.uno-background-color{
+    --background: #c6c935;
+}
+.dos-background-color{
+    --background: #d6881c;
+}
+.tres-background-color{
+    --background: #1c63d6;
+}
+.cuatro-background-color{
+    --background: #d521ba;
+}
+.cinco-background-color{
+    --background: #a8406b;
+}
+ion-button {
+    margin-left: float;
+    width: 300px;
+    height: 30px;
+    --background: #3880ff;
+    --background-activated: #3880ff;
+    --background-activated-opacity: 1;
+    --background-focused: #3880ff;
+    --background-focused-opacity: 1;
+    --background-hover: #3880ff;
+    --background-hover-opacity: 1;
+    --border-color: #3880ff;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 8px;
+    --box-shadow: 1px 1px;
+    --color: #ffffff;
+    --color-activated: #ffffff;
+    --color-focused: #ffffff;
+    --color-hover: #ffffff;
+    --opacity: 1;
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    --padding-top: 4px;
+    --ripple-color: #1e1e1e;
+    --transition: background-color 15ms linear;
+}
+
+img{
+    border-radius: 15%;
+    display:flex;
+    margin:auto;
+//     border-top: 20cm;
+//    // margin-left: 200px;
+//     
+//     align-self: center;
+   }
+
+   
+   
+
